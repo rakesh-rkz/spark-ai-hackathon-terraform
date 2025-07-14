@@ -13,3 +13,7 @@ output "private_subnet_id" {
 output "security_group_id" {
   value = aws_security_group.ec2_sg.id
 }
+
+output "s3_bucket_name" {
+  value = aws_s3_bucket.my_bucket.bucket
+}
