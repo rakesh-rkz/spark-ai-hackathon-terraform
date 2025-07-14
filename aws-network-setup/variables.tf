@@ -2,6 +2,10 @@ variable "region" {
   default = "us-west-2"
 }
 
+variable "vpc_name" {
+  default = "log-a-rythm-vpc"
+}
+
 variable "vpc_cidr" {
   default = "10.0.0.0/16"
 }
@@ -16,4 +20,8 @@ variable "private_subnet1_cidr" {
 
 variable "private_subnet2_cidr" {
   default = "10.0.3.0/24"
+}
+
+variable "availability_zone" {
+  default = "us-west-2a"
 }
