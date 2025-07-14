@@ -1,5 +1,5 @@
 resource "aws_instance" "web_ec2" {
-  ami           = "ami-0fc5d935ebf8bc3bc" # Amazon Linux 2023 (Mumbai)
+  ami           = "ami-08f79bee58074adeb"  #Amazon Ubuntu 22.04 eu-west-2
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.public.id
   associate_public_ip_address = true
